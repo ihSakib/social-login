@@ -7,16 +7,12 @@ export default function Profile() {
   const { data: session } = useSession();
 
   if (!session) {
-    return <p className="text-center text-lg py-4">You are not logged in.</p>; // Styled message
+    return <p className="text-center text-lg py-4">You are not logged in.</p>;
   }
 
   return (
     <div className="flex flex-col items-center justify-center mt-10">
-      {" "}
-      {/* Centered content */}
       <div className="bg-white p-8 rounded-lg shadow-md">
-        {" "}
-        {/* Card-like container */}
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
           Welcome, {session.user.name}
         </h1>
@@ -28,7 +24,6 @@ export default function Profile() {
         <p className="text-lg text-gray-600 mb-2">
           Email: {session.user.email}
         </p>
-      
       </div>
     </div>
   );

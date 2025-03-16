@@ -1,5 +1,4 @@
-// app/api/auth/[...nextauth]/route.js
-
+// app/auth/route.js
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
